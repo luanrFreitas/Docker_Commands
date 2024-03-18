@@ -13,6 +13,11 @@
 ## Gerenciamento de Contêineres
 
 - `docker run <imagem>`: Executa um contêiner a partir de uma imagem.
+    - `-it` : Abre um terminal interativo.
+    - `-d` : Executa em segundo plano.
+    - `-e` : Especifica variáveis de ambiente.
+    - `-p` : Libera portas do contêiner <porta_host:porta_contêiner>
+    - `--name` : Nomeia um conteiner.
 - `docker start <contêiner>`: Inicia um contêiner existente.
 - `docker stop <contêiner>`: Para a execução de um contêiner em execução.
 - `docker restart <contêiner>`: Reinicia um contêiner.
@@ -20,10 +25,11 @@
 - `docker ps`: Lista todos os contêineres em execução.
 - `docker ps -a`: Lista todos os contêineres, incluindo os que estão parados.
 - `docker inspect <contêiner>`: Exibe informações detalhadas sobre um contêiner.
+- `docker cp <nome_arquivo> <nome_contêiner:pasta_destino>`: Copia arquivos entre entre a máquina local e um contêiner.
 
 ## Gerenciamento de Imagens
 
-- `docker pull <imagem>`: Baixa uma imagem do Docker Hub ou de um registro de contêiner.
+- `docker pull <imagem:tag>`: Baixa uma imagem do Docker Hub ou de um registro de contêiner.
 - `docker images`: Lista todas as imagens disponíveis localmente.
 - `docker rmi <imagem>`: Remove uma imagem.
 - `docker build <caminho>`: Constrói uma imagem a partir de um Dockerfile no caminho especificado.
