@@ -18,6 +18,7 @@
     - `-e` : Especifica variáveis de ambiente.
     - `-p` : Libera portas do contêiner <porta_host:porta_contêiner>
     - `--name` : Nomeia um conteiner.
+    - `--volume` : mapeia um volume que será utilizado pelo container <--volume=path_origem:path_destino>.
 - `docker start <contêiner>`: Inicia um contêiner existente.
 - `docker stop <contêiner>`: Para a execução de um contêiner em execução.
 - `docker restart <contêiner>`: Reinicia um contêiner.
